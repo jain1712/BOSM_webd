@@ -1,0 +1,67 @@
+<head>
+<link rel="stylesheet" href="register_style.css"/>
+    <title>BOSM APP admin panel</title>
+    <link rel="shortcut icon" href="title.png"/>
+</head>
+<body style="background-image: url(bckg.jpg)">
+    <header><h1 style="color:white">Register Event</h1></header>
+    <div>
+        <input class="i" type="text" placeholder="Event Name" >
+    <br/><br/>
+    <input class="i" type="date" placeholder="Date" >
+    <br/><br/>
+    <input class="i" type="time" >
+    <br/><br/>
+    <input class="i" type="text" placeholder="Description" ><br/><br/>
+        
+        Event Type:
+    <select id="options" name="form_select" onchange="showDiv(this)">
+        <option value="null"></option>
+        <option value="1v1" >1 vs 1</option>
+<!--         <option value="athletics">Athletics</option>-->
+        <option value="team">Team</option>
+    </select>
+    <br/><br/>
+    
+    <input type="text" placeholder="Team A" id="team">
+    <br/><br/>
+    <input type="text" placeholder="Team B" id="team1">
+    <br/><br/>
+    <input type="text" placeholder="Player 1 Name" id="1v1"><br/><br/>  
+    <input type="text" placeholder="Player 1 College Name" id="1v12"><br/><br/>  
+    <input type="text" placeholder="Player 2 Name" id="1v13"><br/><br/>  
+    <input type="text" placeholder="Player 2 College Name" id="1v14"><br/><br/>  
+    <button type="submit" id="sub">SUBMIT</button>
+    </div>
+
+</body>
+<script>
+        function showDiv(select)
+        {
+            if(select.value=="1v1")
+               { 
+                document.getElementById('1v1').style.display='inline-block';
+                document.getElementById('1v12').style.display='inline-block';
+                document.getElementById('1v13').style.display='inline-block';
+                document.getElementById('1v14').style.display='inline-block';
+                   
+                   document.getElementById('team').style.display='none';
+                    document.getElementById('team1').style.display='none';
+                 document.getElementById('sub').style.display='inline-block';
+                
+               }
+            if(select.value=="team")
+                {
+                    document.getElementById('1v1').style.display='none';
+                document.getElementById('1v12').style.display='none';
+                document.getElementById('1v13').style.display='none';
+                document.getElementById('1v14').style.display='none';
+               
+                    document.getElementById('team').style.display='inline-block';
+                    document.getElementById('team1').style.display='inline-block';
+                 document.getElementById('sub').style.display='inline-block';
+                    
+                }
+        }
+   
+</script>
