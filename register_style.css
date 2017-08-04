@@ -1,6 +1,6 @@
 div { text-align: center;margin:  0 auto; color:white}
     input {text-align: center; display: none;}
 header { text-align: center;}
-button {display: none;}
+button {display: visible;}
 #ev_name {text-align: center;}
 .i {display: inline-block}

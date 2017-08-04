@@ -2,37 +2,48 @@
 <link rel="stylesheet" href="register_style.css"/>
     <title>BOSM APP admin panel</title>
     <link rel="shortcut icon" href="title.png"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body style="background-image: url(bckg.jpg)">
-    <header><h1 style="color:white">Register Event</h1></header>
+<body style="background-color:#5d4037;">
+    <header><h1 style="color:white;font-family: 'Roboto', sans-serif;">Register Event</h1></header>
     <div>
-        <input class="i" type="text" placeholder="Event Name" >
-    <br/><br/>
-    <input class="i" type="date" placeholder="Date" >
-    <br/><br/>
-    <input class="i" type="time" >
-    <br/><br/>
-    <input class="i" type="text" placeholder="Description" ><br/><br/>
-        
-        Event Type:
-    <select id="options" name="form_select" onchange="showDiv(this)">
-        <option value="null"></option>
-        <option value="1v1" >1 vs 1</option>
-<!--         <option value="athletics">Athletics</option>-->
-        <option value="team">Team</option>
-    </select>
-    <br/><br/>
-    
-    <input type="text" placeholder="Team A" id="team">
-    <br/><br/>
-    <input type="text" placeholder="Team B" id="team1">
-    <br/><br/>
-    <input type="text" placeholder="Player 1 Name" id="1v1"><br/><br/>  
-    <input type="text" placeholder="Player 1 College Name" id="1v12"><br/><br/>  
-    <input type="text" placeholder="Player 2 Name" id="1v13"><br/><br/>  
-    <input type="text" placeholder="Player 2 College Name" id="1v14"><br/><br/>  
-    <button type="submit" id="sub">SUBMIT</button>
-    </div>
+				<input class="i" type="text" placeholder="Event Name" ><br/><br/>
+			<input class="i" type="datetime-local" placeholder="Date" ><br/><br/>
+			  <input class="i" type="text" placeholder="Venue" ><br/><br/>
+			<input class="i" type="text" placeholder="Description" ><br/><br/>
+				
+				Sport Type:
+			<select id="options2" name="form2" >
+				<option value="null"></option>
+				 <option value="Athletics" >Athletics</option>
+				  <option value="Swimming">Swimming</option>
+				   <option value="Taekwondo">Taekwondo</option>
+					<option value="Badminton">Badminton</option>
+					 <option value="Basketball">Basketball</option>
+					  <option value="Cricket">Cricket</option>
+				
+			</select>
+			<br/><br/>
+			
+				Event Type:
+			<select id="options" name="form_select" onchange="showDiv(this)">
+				<option value="athletics">Athletics</option>
+				<option value="1v1" >1 vs 1</option>
+				<option value="team">Team</option>
+			</select>
+			<br/><br/>
+			
+			
+			<input type="text" placeholder="Team A" id="team">
+			<br/><br/>
+			<input type="text" placeholder="Team B" id="team1">
+			<br/><br/>
+			<input type="text" placeholder="Player 1 Name" id="1v1"><br/><br/>  
+			<input type="text" placeholder="Player 1 College Name" id="1v12"><br/><br/>  
+			<input type="text" placeholder="Player 2 Name" id="1v13"><br/><br/>  
+			<input type="text" placeholder="Player 2 College Name" id="1v14"><br/><br/>  
+			<button type="submit" id="sub" >SUBMIT</button>   
+	</div>
 
 </body>
 <script>
@@ -59,6 +70,18 @@
                
                     document.getElementById('team').style.display='inline-block';
                     document.getElementById('team1').style.display='inline-block';
+                 document.getElementById('sub').style.display='inline-block';
+                    
+                }
+				 if(select.value=="athletics")
+                {
+                    document.getElementById('1v1').style.display='none';
+                document.getElementById('1v12').style.display='none';
+                document.getElementById('1v13').style.display='none';
+                document.getElementById('1v14').style.display='none';
+               
+                    document.getElementById('team').style.display='none';
+                    document.getElementById('team1').style.display='none';
                  document.getElementById('sub').style.display='inline-block';
                     
                 }
