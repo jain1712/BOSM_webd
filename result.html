@@ -1,16 +1,21 @@
 
 <html>
 <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" href="register_style.css"/>
     <title>BOSM APP admin panel</title>
     <link rel="shortcut icon" href="title.png"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body style="background-color:#5d4037; font-family: 'Roboto', sans-serif;">
-    <header><h1 style="color:white">Result</h1></header>
-    <div>
-      
-        
+    
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-6">
+          <header><h1 style="color:azure">Result</h1></header>
+          
       Event Type:
     <select id="options" name="form_select" onchange="showDiv(this)">
          <option value="null" >  </option>
@@ -20,14 +25,17 @@
     </select><br/><br/>
 	
 	  Select Event:
-    <select id="options2" name="form_selec2t">
+    <select id="options2" name="form_select">
          <option value="null" >  </option>
-        <option value="1" >1</option>
-		<option value="2">2</option>
-        <option value="3">3</option>
-    </select><br/><br/>
+        <option value="1" >Event1</option>
+		<option value="2">Event2</option>
+        <option value="3">Event3</option>
+          </select><br/><br/>
+          
+          
+          </div>
     
-    
+    <div class="col-lg-6">
     <input style=" position:relative;margin-top:5%  "  type="text" disabled placeholder="Player 1 Name" id="1v1">
 
      <input style ="" type="text" placeholder="Player 2 Name" disabled id="1v13"><br/><br/> 
@@ -43,18 +51,20 @@
 	<input type="text" placeholder="Third"  id="third"><br/><br/>
 
 	
-     <input id="sel2" type="radio" name="winner" value="palyer2" > 
-     <input id="sel3" type="radio" name="winner" value="palyer3" > <br/>
-    <button type="submit" id="sub">SUBMIT</button>
+    
+   
     <input type="text" placeholder="Team A" disabled id="team">
     
     <input type="text" placeholder="Team B" disabled id="team1">
     <br/><br/>
      <input id="sel" type="radio" name="winner" value="team" > 
-     <input id="sel1" type="radio" name="winner" value="team" >  <br/>  <button type="submit" id="sub1">SUBMIT</button>
+     <input id="sel1" type="radio" name="winner" value="team" >  <br/> 
+        
+          </div></div></div>
+          <div class="container"><div class="row"><div class="col-lg-4"></div><div class="col-lg-4"><button type="submit" id="sub1">SUBMIT</button></div></div></div>
 
+        
 
-    </div>
 
 
 <script>
