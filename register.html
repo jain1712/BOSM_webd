@@ -25,15 +25,17 @@ select {
     border-bottom: 2px solid white;
 }
     input[type=text]:focus {
-    border-bottom: 2px solid blue;
-        transition-duration: 1s;
+    border-bottom: 2px solid #2c2c2e;
+        transition-duration: 0.3s;
         transition-property: all;
+        outline: 0;
 }
     button {
         background-color: white;
         color: black;
         }
-    .button1:hover { background-color: #725349; color:white;border: 3px brown solid; transition-duration: 0.2s; cursor: pointer}
+    .button1:hover { background-color: #725349; color:white;border: 3px brown solid; transition-duration: 0.2s; cursor: pointer; text-decoration: none;}
+    .button1:focus{outline: 0; }
     #r {display: none;}
     #r1 {display: none}
 </style>
