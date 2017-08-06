@@ -29,6 +29,7 @@ select {
         transition-duration: 0.3s;
         transition-property: all;
         outline: 0;
+        color: #ffffff
 }
     button {
         background-color: white;
@@ -44,10 +45,11 @@ select {
         <div class="col-lg-6">
     <header><h1 style="color:white;font-family: 'Roboto', sans-serif;">Register Event</h1></header>
     <br />
-				<input class="i" type="text" placeholder="Event Name" ><br/><br/>
+			<form>
+            <input class="i" type="text" placeholder="Event Name" ><br/><br/>
 			<input class="i" type="datetime-local" placeholder="Date" ><br/><br/>
 			  <input class="i" type="text" placeholder="Venue" ><br/><br/>
-			<input class="i" type="text" placeholder="Description" ><br/><br/>
+                <input class="i" type="text" placeholder="Description" ><br/><br/></form>
             </div>	
         <div class="col-lg-6">
 				Sport Type:
@@ -65,6 +67,7 @@ select {
 			
 				Event Type:
 			<select id="options" name="form_select" onchange="showDiv(this)">
+                <option value="0">--Choose One--</option>
 				<option value="athletics">Athletics</option>
 				<option value="1v1" >1 vs 1</option>
 				<option value="team">Team</option>
