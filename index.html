@@ -1,78 +1,47 @@
 <head>
     
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="stylesheet.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="index_style.css">
-    <link rel="shortcut icon" href="title.png"/>
-    <link rel="stylesheet" href="SedgwickAveDisplay-Regular.ttf">
 <title>BOSM APP admin panel</title>
 </head>
 <style>
-    @font-face{
-     font-family:SedgwickAveDisplay-Regular;
-         src:url("SedgwickAveDisplay-Regular.ttf");
-    }
-    button {
-        background-color: white;
-        color: black;
-        }
-    .button1:hover { background-color: #725349; color:white;border: 3px #652323 solid; transition-duration: 0.2s; cursor: pointer}
-    a {text-decoration: none;}
-    a:hover{text-decoration: none;}
-    
+
+	*{ padding: 0px; margin: 0px; text-align: center;  }
+	body{ background-image: url("bckg.jpg"); display: flex; flex-direction: column; height: 100vh; width: 100vw; background-size: 100% 100% ; align-items: center; } 
+	.container{ height: 75vh; width: 75vw; display: flex; flex-direction: column; flex: 1; background: #bdc3c7; opacity: 0.75; }
+    	.group{ display: flex; flex-direction: column; justify-content: space-around; flex: 1; border: 5px solid #e67e22;}
+	.head{background: #e67e22; padding: 5vh 5vw; color: white; }
+	button{ padding: 3vh 3vw; width: 80%; border: 2px solid #e67e22; transition: all 0.7s; }
+	button:hover{ background: #e67e22; color: white; }
+  
 </style>
-<body style="background-image: url(bckg.jpg); background-attachment: inherit; background-repeat: no-repeat; background-size: cover;   ">
+<body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4" style="text-align: center; padding-top: 12%; padding-bottom: 4%;">
-                <h3 style="color: azure; font-family: SedgwickAveDisplay-Regular; font-size: 300%">BOSM APP ADMIN PANEL</h3>
-            </div>
+        <div class="head">
+                <h2><b>BOSM APP ADMIN PANEL</b></h2>
         </div>
-    </div>
-   <div class="container">
-       <div class="row">
-       <div class="col-lg-8"></div>
-       <div class="col-lg-4">   
+	
+	<div class="group"> 
+
+	<section>
            <a href="register.html" >
-               <button type="button" class=" btn  btn-block button1" style="border: 1.5px solid black;">Register Events</button>
+               <button>REGISTER EVENTS</button>
            </a>
-       </div>
-       </div>
-    </div>
-       
-    <br/>
-  <div class="container">
-      <div class="row">
-      <div class="col-lg-8"></div>
-          <div class="col-lg-4">
+	</section>
+	<section>
+      		<a href="result.html" >
+                  <button>UPLOAD RESULTS</button>
+                </a>
+	</section>
+	<section>
+   	   <a href="result.html" >
+                  <button>UPDATE EVENT</button>
+           </a>
+	</section>
+
+	<section>
               <a href="result.html" >
-                  <button type="button" class=" btn  btn-block button1" style="border: 1.5px solid black;">Upload Results</button>
+                  <button>UPDATE RESULT</button>
               </a>
+	</section>
           </div>
       </div>
-  </div>
-    <br/>
-  <div class="container">
-      <div class="row">
-      <div class="col-lg-8"></div>
-          <div class="col-lg-4">
-              <a href="result.html" >
-                  <button type="button" class=" btn  btn-block button1" style="border: 1.5px solid black;">Update Event</button>
-              </a>
-          </div>
-      </div>
-  </div>
-    <br/>
-  <div class="container">
-      <div class="row">
-      <div class="col-lg-8"></div>
-          <div class="col-lg-4">
-              <a href="result.html" >
-                  <button type="button" class=" btn  btn-block button1" style="border: 1.5px solid black;">Update Result</button>
-              </a>
-          </div>
-      </div>
-  </div>
 </body>
